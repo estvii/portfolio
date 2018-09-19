@@ -2,3 +2,58 @@
     background-color: purple;
 }
 
+body {
+    background-color: #FBFBFB;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* Skills Icons Start*/
+.skills-icons {
+    font-size: 5em;
+    width: auto;
+}
+/* Skills Icons End */
+/* Contact Me Icons Start*/
+.fa-envelope {
+    font-size: 5em;
+    color: #C8393B;
+    padding: 10px;
+}
+.fa-github {
+    font-size: 5em;
+    padding: 10px;
+}
+
+.fa-linkedin {
+    font-size: 5em;
+    color: #1275B1;
+    padding: 10px;
+}
+/* Contact Me Icons End */
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
