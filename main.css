@@ -6,6 +6,10 @@ body {
     background-color: #FBFBFB;
 }
 
+p {
+    font-family: 'Quicksand',sans-serif;
+}
+
 hr {
     display: block;
     height: 1px;
@@ -14,29 +18,88 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+/* About Me Start */
+.profilePicture {
+    border-radius: 50%;
+    border: 7px solid #84F2DA;
+    width: 250px;
+    height: 250x;
+    display: block;
+    margin: auto;
+}
 
+.about-me h2{
+    padding-top: 2rem;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+}
+/* About Me End */
+/* Project Start*/
+.projects {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    text-align: center;
+}
 
-/* Skills Icons Start*/
+.card-padding {
+    padding: 0.3rem;   
+}
+
+.card {
+    width: auto;
+    height: 100%;
+    
+}
+
+.card-img-top {
+    width: 90%;
+    padding: 1em;
+    margin: auto;
+}
+
+/* Project End */
+/* Skills Start */
+.skills {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
 .skills-icons {
     font-size: 5em;
-    width: auto;
+    text-align: center;
 }
-/* Skills Icons End */
+/* Skills  End */
+
 /* Contact Me Icons Start*/
+.contact-me{
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.contact-icons {
+    text-align:center;
+}
+
 .fa-envelope {
     font-size: 5em;
     color: #C8393B;
     padding: 10px;
+    margin: 10px 30px;
 }
 .fa-github {
     font-size: 5em;
+    color: #000;
     padding: 10px;
+    margin: 10px 30px;
 }
 
 .fa-linkedin {
     font-size: 5em;
     color: #1275B1;
     padding: 10px;
+    margin: 10px 30px;
 }
 /* Contact Me Icons End */
 
