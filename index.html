@@ -33,8 +33,8 @@
                         <li class="nav-item"><a class="nav-link Active" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href ="#go2about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href ="#go2projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href ="#slide">Internet</a></li> 
                         <li class="nav-item"><a class="nav-link" href ="#go2skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href ="#">Internet</a></li> <!--FIXME: update href-->
                         <li class="nav-item"><a class="nav-link" href ="#go2contacts">Contact</a></li>
                 </ul>
             </div>            
@@ -94,10 +94,39 @@
 
     <!-- PROJECTS TWO COLUMNS USING CARDS END -->
     <hr/>
-    <!-- INTERNET HISTORY -->
-    <!-- TO BE ADDED -->
-    <!-- INTERNET HISTORY -->
-    <hr>/
+    <!-- INTERNET HISTORY CAROUSEL-->
+    <div id="slide" class="carousel slide" data-ride="carousel" data-internval="10">
+        <ol class="carousel-indicators">
+            <li data-target="#slide" data-slide-to="0" class="active"></li>
+            <li data-target="#slide" data-slide-to="1"></li>
+            <li data-target="#slide" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/internetHistory.jpg" alt="Internet History">
+                <div class="carousel-caption">
+                    <h3 class="display-3">Internet History</h3>
+                    <button type="button" class="btn btn-primary">View More</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/internetNetworking.jpg" alt="Networking">
+                <div class="carousel-caption">
+                    <h3 class="display-3">Networking</h3>
+                    <button type="button" class="btn btn-primary">View More</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/internetTechnology.jpg" alt="Internet Technology">
+                <div class="carousel-caption">
+                    <h3 class="display-3">Internet Technnology</h3>
+                    <a href="www.google.com"><button type="button" class="btn btn-primary">View More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- INTERNET HISTORY CAROUSEL-->
+    <hr/>
     <!-- SKILLS START  -->
     <div class="container-fluid" id=go2skills>
         <div class="row">
