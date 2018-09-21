@@ -11,14 +11,28 @@ p {
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-color: #CCC;;
 }
+
+/* Navbar Start */
+.navbar {
+    background-color: #D8FFF6;
+}
+
+.navitems {
+    color: #6C7F7B;
+}
+
+/* Navbar End */
 /* About Me Start */
+#go2about {
+    padding-top: 20px;
+}
+
 .profilePicture {
     border-radius: 50%;
     border: 7px solid #84F2DA;
@@ -32,6 +46,7 @@ hr {
     padding-top: 2rem;
     font-family: 'Quicksand',sans-serif;
     font-weight: bold;
+    
 }
 /* About Me End */
 /* Project Start*/
@@ -123,6 +138,45 @@ hr {
     margin: 10px 30px;
 }
 /* Contact Me Icons End */
+
+/* Media Queries Start */
+
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 55%;
+    }
+    .carousel-caption h3 {
+        font-size: 300%;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 50%;
+    }
+    .carousel-caption h3 {
+        font-size: 230%;
+    }
+    .carousel-caption .btn {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 320px) {
+    .carousel-caption {
+        top: 45%;
+    }
+    .carousel-caption h3 {
+        font-size: 150%;
+    }
+    .carousel-caption .btn {
+        font-size: 50%;
+    }
+}
+/* Media Queries End */
+
+
 
 
 /*
