@@ -10,6 +10,10 @@ p {
     font-family: 'Quicksand',sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 hr {
     width: 50%;
     margin: auto;
@@ -37,7 +41,7 @@ hr {
     border-radius: 50%;
     border: 7px solid #84F2DA;
     width: 250px;
-    height: 250x;
+    height: 250px;
     display: block;
     margin: auto;
 }
@@ -50,6 +54,11 @@ hr {
 }
 /* About Me End */
 /* Project Start*/
+#go2projects {
+    position: relative;
+    top: -56px;
+}
+
 .projects {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
@@ -63,9 +72,7 @@ hr {
 
 .card {
     width: auto;
-    height: 100%;
-
-    
+    height: 100%;    
 }
 
 .card-img-top {
@@ -88,6 +95,11 @@ hr {
 }
 /* Skills  End */
 /* Internet History Start*/
+#go2carousel {
+    position: relative;
+    top: -56px;
+}
+
 
 .carousel {
     width: 95%;
@@ -138,6 +150,23 @@ hr {
     margin: 10px 30px;
 }
 /* Contact Me Icons End */
+
+/* Internet Start html */
+#go2internet-history {
+    position: relative;
+    top: -56px;
+}
+
+#go2internet-networking {
+    position: relative;
+    top: -56px;
+}
+
+#go2internet-tech {
+    position: relative;
+    top: -56px;
+}
+/* Internet End html */
 
 /* Media Queries Start */
 
