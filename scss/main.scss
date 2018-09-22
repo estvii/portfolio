@@ -53,6 +53,22 @@ hr {
     
 }
 /* About Me End */
+/* Education and Career START*/ 
+#go2educareer {
+    position: relative;
+    top: -56px;
+}
+
+.fa-briefcase {
+    font-size: 4em;
+    padding: 10px;
+}
+
+.fa-graduation-cap {
+    font-size: 4em;
+    padding: 10px;
+}
+/* Education and Career END*/ 
 /* Project Start*/
 #go2projects {
     position: relative;
@@ -73,6 +89,10 @@ hr {
 .card {
     width: auto;
     height: 100%;    
+}
+
+.card:hover {
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.15);
 }
 
 .card-img-top {
