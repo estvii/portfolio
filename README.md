@@ -1,6 +1,7 @@
 # Steven's Portfolio
 
 Portfolio page: https://estvii.github.io/portfolio/
+
 Repository: https://github.com/estvii/portfolio
 
 #### Description of the portfolio website
@@ -18,16 +19,21 @@ Repository: https://github.com/estvii/portfolio
 * Icons - functioning icons to allow users to contact me via email, github or linkedin
 
 **Sitemap**
-![Image of sitemap](Insert sitemap link)
+![Image of sitemap](https://github.com/estvii/portfolio/blob/master/resources/sitemap.png)
 
 **Screenshots**
-![Image of mobile version homepage](Insert mob homepage link)
-![Image of mobile version projects page](Insert mob projects link)
-![Image of mobile version internet page](Insert mob internet link)
 
-![Image of version homepage](Insert mob homepage link)
-![Image of version projects page](Insert mob projects link)
-![Image of version internet page](Insert mob internet link)
+[Image of mobile version homepage](https://github.com/estvii/portfolio/blob/master/resources/mobile-home.jpg)
+
+[Image of mobile version projects page](https://github.com/estvii/portfolio/blob/master/resources/mobile-projects.jpg)
+
+[Image of mobile version internet page](https://github.com/estvii/portfolio/blob/master/resources/mobile-internet.jpg)
+
+[Image of desktop homepage](https://github.com/estvii/portfolio/blob/master/resources/desktop-home.jpg)
+
+[Image of desktop projects page](https://github.com/estvii/portfolio/blob/master/resources/desktop-projects.jpg)
+
+[Image of desktop internet page](https://github.com/estvii/portfolio/blob/master/resources/desktop-internet.jpg)
 
 **Target audience:** 
 * Employers
@@ -70,8 +76,12 @@ JavaScript Libraries
 5. Launching: website is currently being launched via github pages platform
  
 **Wireframes**
-![Image of mobile wireframe](insert wireframe link here)
-![Image of desktop wireframe](insert wireframe link here)
+
+*Mobile Layout*
+![Image of mobile wireframe](https://github.com/estvii/portfolio/blob/master/resources/Mobile%20Version%20Wireframe.png)
+
+*Desktop Layout*
+![Image of desktop wireframe](https://github.com/estvii/portfolio/blob/master/resources/Desktop%20Version%20Wireframe.png)
 
 **Personal Logo**: *Work in Progress*
 
@@ -92,11 +102,12 @@ Project End Date: 10:00am Monday 24/09/18
 * 24/09/2018 - Submit and Presentation.
 
 **Trello Board Screenshot**
-![Image of trelloboard](Insert Link Here)
+![Image of trelloboard](https://github.com/estvii/portfolio/blob/master/resources/Trelloboard.png)
 
 #### Short Answer Q&A
 
 **Describe key events in the development of the internet from the 1980s to today.(max 150 words)**
+
 * 1982 - TCP (Transmission Control Protocol) and IP (Internet Protocol) emerge as the protocol for ARPANET. Once implemented it made it a lot easier for different networks to connect to one another forming what is called the internet.
 * 1983 - The Domain Name System (DNS) establishes the familiar .edu .gov .com etc for naming websites. This became easier for users remember than the previous designation for websites which used ip address e.g. 123.456.78.0 
 * 1990 - HyperText Markup Language (HTML) is developed by CERN, which continues to have an impact today on how we view the internet.
@@ -107,6 +118,7 @@ Project End Date: 10:00am Monday 24/09/18
 * 2014 - HTML5 released
 
 **Define and describe the relationship between fundamental aspects of the internet such as: domains, web servers, DNS and web browsers (150 words max)**
+
 A web browser is a software application for accessing the worldwide web. Each individual web page is identified by a unique url enabling users to retrieve its content. In the url, a domain-name exist which is used in finding the correct web server.
 
 Domain names exist as part of the DNS (Domain Name System), it is a name that is assigned to the ip address of a website. This makes it a lot easier for users to remember names rather then having to type in a websites ip address.
@@ -115,6 +127,7 @@ DNS is the equivalent to the internets phonebook which maintains a directory of 
 Web servers is a hardware/software that serves content to the world wide web. It hosts a websites content while the server program delivers the web pages content to a users web browser based on incoming network request.
 
 **Reflect on one aspect of the development of the internet technologies and how it has contributed to the world today (150 words)**
+
 1974 Vinton Cerf and Bob Kahn published “A Protocol for packet network interconnection” which details the design of TCP / IP which is still being used today. The Transmission Control Protocol (TCP) details the standard for a way of formatting packets so that each network was speaking the same language. Internet Protocol (IP), was a standard way of assigning addresses to ensure packets are going in the right direction. 
 
 Prior to this networks formatted their packets differently and was often difficult to connect. It wasn’t until 1982 when TCP / IP became the standard for networks to talk to each other, this meant networks could be scaled a lot easier resulting in what is called the internet. 
