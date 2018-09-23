@@ -1,13 +1,15 @@
-.test {
-  background-color: purple;
-}
-
+/* Colors */
+/* Primary Brand Color - Blue with shades and tints */
+/* Secondary Brand color - Yellow with shades and tints */
+/* Secondary Brand color - Red with shades and tints */
+/* Neutral Colors */
+/* Colors End */
 body {
-  background-color: #FBFBFB;
+  background-color: #F7F7FF;
 }
 
 p {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -24,11 +26,14 @@ hr {
 
 /* Navbar Start */
 .navbar {
-  background-color: #D8FFF6;
+  background-color: #6cc0e5;
 }
-
-.navitems {
-  color: #6C7F7B;
+.navbar .navbar-brand {
+  color: #F7F7FF;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #F7F7FF;
+  font-weight: 10px;
 }
 
 /* Navbar End */
@@ -104,6 +109,11 @@ hr {
 
 /* Project End */
 /* Skills Start */
+#go2skills {
+  position: relative;
+  top: -56px;
+}
+
 .skills {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
@@ -141,6 +151,11 @@ hr {
 
 /* Internet History End */
 /* Contact Me Icons Start*/
+#go2contacts {
+  position: relative;
+  top: -56px;
+}
+
 .contact-me {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
@@ -190,6 +205,14 @@ hr {
 }
 
 /* Internet End html */
+/* Project App Start */
+#go2project {
+  position: relative;
+  top: -56px;
+}
+
+/* Project App End */
+/* */
 /* Media Queries Start */
 @media (max-width: 768px) {
   .carousel-caption {
@@ -213,7 +236,7 @@ hr {
     font-size: 70%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .carousel-caption {
     top: 45%;
   }
