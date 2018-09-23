@@ -1,0 +1,26 @@
+/* Colors */
+/* Primary Brand Color - Blue with shades and tints */
+$clr-primary: #6cc0e5;
+$clr-primary-lt: lighten($clr-primary, 5%);
+$clr-primary-ltr: lighten($clr-primary, 10%);
+$clr-primary-dk: darken($clr-primary, 5%);
+$clr-primary-dk: darken($clr-primary, 10%);
+
+/* Secondary Brand color - Yellow with shades and tints */ 
+$clr-secondary-yel: #fbc93d;
+$clr-secondary-yel-lt: lighten($clr-secondary-yel, 5%);
+$clr-secondary-yel-ltr: lighten($clr-secondary-yel, 10%);
+$clr-secondary-yel-dk: darken($clr-secondary-yel, 5%);
+$clr-secondary-yel-dkr: darken($clr-secondary-yel, 10%);
+
+/* Secondary Brand color - Red with shades and tints */ 
+$clr-secondary-red: #fb4f4f;
+$clr-secondary-red-lt: lighten($clr-secondary-red, 5%);
+$clr-secondary-red-ltr: lighten($clr-secondary-red, 10%);
+$clr-secondary-red-dk: darken($clr-secondary-red, 5%);
+$clr-secondary-red-dkr: darken($clr-secondary-red, 10%);
+
+/* Neutral Colors */
+$clr-ntrl-min: #F7F7FF;
+$clr-ntrl-max: #000;
+/* Colors End */ 
