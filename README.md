@@ -19,21 +19,21 @@ Repository: https://github.com/estvii/portfolio
 * Icons - functioning icons to allow users to contact me via email, github or linkedin
 
 **Sitemap**
-![Image of sitemap](https://github.com/estvii/portfolio/blob/master/resources/sitemap.png)
+![Image of sitemap](https://github.com/estvii/portfolio/blob/master/docs/sitemap.png)
 
 **Screenshots**
 
-[Image of mobile version homepage](https://github.com/estvii/portfolio/blob/master/resources/mobile-home.jpg)
+[Image of mobile version homepage](https://github.com/estvii/portfolio/blob/docs/docs/mobile-home.jpg)
 
-[Image of mobile version projects page](https://github.com/estvii/portfolio/blob/master/resources/mobile-projects.jpg)
+[Image of mobile version projects page](https://github.com/estvii/portfolio/blob/master/docs/mobile-projects.jpg)
 
-[Image of mobile version internet page](https://github.com/estvii/portfolio/blob/master/resources/mobile-internet.jpg)
+[Image of mobile version internet page](https://github.com/estvii/portfolio/blob/master/docs/mobile-internet.jpg)
 
-[Image of desktop homepage](https://github.com/estvii/portfolio/blob/master/resources/desktop-home.jpg)
+[Image of desktop homepage](https://github.com/estvii/portfolio/blob/master/docs/desktop-home.jpg)
 
-[Image of desktop projects page](https://github.com/estvii/portfolio/blob/master/resources/desktop-projects.jpg)
+[Image of desktop projects page](https://github.com/estvii/portfolio/blob/master/docs/desktop-projects.jpg)
 
-[Image of desktop internet page](https://github.com/estvii/portfolio/blob/master/resources/desktop-internet.jpg)
+[Image of desktop internet page](https://github.com/estvii/portfolio/blob/master/docs/desktop-internet.jpg)
 
 **Target audience:** 
 * Employers
@@ -78,10 +78,10 @@ JavaScript Libraries
 **Wireframes**
 
 *Mobile Layout*
-![Image of mobile wireframe](https://github.com/estvii/portfolio/blob/master/resources/Mobile%20Version%20Wireframe.png)
+![Image of mobile wireframe](https://github.com/estvii/portfolio/blob/master/docs/Mobile%20Version%20Wireframe.png)
 
 *Desktop Layout*
-![Image of desktop wireframe](https://github.com/estvii/portfolio/blob/master/resources/Desktop%20Version%20Wireframe.png)
+![Image of desktop wireframe](https://github.com/estvii/portfolio/blob/master/docs/Desktop%20Version%20Wireframe.png)
 
 **Personal Logo**: *Work in Progress*
 
@@ -102,7 +102,7 @@ Project End Date: 10:00am Monday 24/09/18
 * 24/09/2018 - Submit and Presentation.
 
 **Trello Board Screenshot**
-![Image of trelloboard](https://github.com/estvii/portfolio/blob/master/resources/Trelloboard.png)
+![Image of trelloboard](https://github.com/estvii/portfolio/blob/master/docs/Trelloboard.png)
 
 #### Short Answer Q&A
 
