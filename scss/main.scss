@@ -1,347 +1,118 @@
-@import 'colors';
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
-/* fonts */
-$ff-h: 'Open Sans', sans-serif;
-$ff-p: 'Raleway', sans-serif;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5D4954;
 
-
-body {
-    background-color: $clr-ntrl-min;
 }
 
-html {
-    scroll-behavior: smooth;
+.logo {
+    color: rbg(266,266,266);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
 }
 
-hr {
-    width: 50%;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-color: #CCC;
-}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
 
-/* Navbar START */
-.navbar {
-    background-color: $clr-primary;
-    .navbar-brand {
-        color: $clr-ntrl-min;
-        font-family: $ff-h;    
+    a { 
+        color: rgb(226,226,226);
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 14px;
     }
-    .navbar-nav {
-        .nav-item {
-            .nav-link {
-                color: $clr-ntrl-min;
-                font-family: $ff-h
-            }
-        }
-    }       
-}
-/* Navbar END */
 
-/* About Me START */
-#go2about {
-    padding-top: 20px;
+    li {
+        list-style: none;
+    }
 }
 
-.container-fluid {
-    .profilePicture {
-        border-radius: 50%;
-        border: 7px solid $clr-primary;
-        width: 250px;
-        height: 250px;
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger {
+    div {
+        width: 25px;
+        height: 3px;
+        background-color: rgb(226,226,226);
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+     overflow-x: hidden;   
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+        // li {
+        //     opacity: 0;
+        // }
+    }
+
+    .burger {
         display: block;
-        margin: auto;
-    }
-    .about-me {
-        h2 {
-            padding-top: 2rem;
-            font-family: $ff-h;
-        }
-        .web-dev {
-            color: $clr-secondary-red;
-        }
-        .full-stack {
-            color: $clr-secondary-yel-dkr;
-        }
-    }
-    p { 
-        font-family: $ff-p;
-        
-    }
-    ul li {
-        font-family: $ff-p;
-    }
-}
-/* About Me END */
-
-/* Education and Career START*/ 
-#go2educareer {
-    position: relative;
-    top: -56px;
-}
-.container-fluid {
-    .educareer-icons {
-        h2 {
-            font-family: $ff-h;
-        }
-        p {
-            font-family: $ff-p;
-        }
-        .fa-briefcase {
-            font-size: 4em;
-            padding: 10px;
-        }
-        .fa-graduation-cap {
-            font-size: 4em;
-            padding: 10px;
-        }
-    }
-}
-/* Education and Career END*/ 
-
-/* Project Start*/
-#go2projects {
-    position: relative;
-    top: -56px;
-}
-
-.container-fluid {
-    .projects {
-        font-family: $ff-h;
-        padding-bottom: 1rem;
-        
-    }
-    .fa-project-diagram {
-        font-size: 4em;
-        padding: 10px;
-    }
-    .card-padding {
-        padding: 1rem;   
-    }
-    .card {
-        width: auto;
-        height: 100%;
-        &:hover {
-            box-shadow: 5px 10px 10px rgba(0,0,0,0.15);
-        }
-        .card-img-top {
-            width: 90%;
-            padding: 1em;
-            margin: auto;
-        }
-    }
-}
-/* Project End */
-
-/* Carousel (Internet History) Start*/
-#go2carousel {
-    position: relative;
-    top: -56px;
-}
-
-.carousel {
-    width: 95%;
-    height: auto;
-    margin: auto;
-    .carousel-item {
-        img {
-        width: 100%;
-        height: auto; 
-        }
-        .carousel-caption {
-            position: absolute;
-            top: 55%;
-            transform: translateY(-50%);
-        }
-        h3 {
-            font-family: $ff-h;
-            color: $clr-ntrl-min;
-        }
-    }
-}
-/* Carousel (Internet History) End */
-
-/* Skills Start */
-#go2skills {
-    position: relative;
-    top: -56px;
-}
-.container-fluid {
-    .skills {
-        font-family: $ff-h;
-        text-align: center;
-    }
-    .skills-icons {
-        font-size: 5em;
-        text-align: center;
-    }
-}
-/* Skills End */
-
-/* Contact Me Icons Start*/
-#go2contacts {
-    position: relative;
-    top: -56px;
-}
-.container-fluid {
-    .contact-me {
-        font-family: $ff-h;
-        text-align: center;
-    }
-    .contact-icons {
-        text-align: center;
-        .fa-envelope {
-            font-size: 5em;
-            color: #C8393B;
-            padding: 10px;
-             margin: 10px 30px;
-        }
-        .fa-github {
-            font-size: 5em;
-            color: #000;
-            padding: 10px;
-             margin: 10px 30px;
-        }
-        .fa-linkedin {
-            font-size: 5em;
-            color: #1275B1;
-            padding: 10px;
-             margin: 10px 30px;
-        }
-    }
-}
-/* Contact Me Icons End */
-
-/* Footer Start */
-.footer {
-    font-family: $ff-p;
-    font-size: 13px;
-    text-align: center;
-    padding-top: 10px;
-}
-
-/* Footer End */
-
-// Other Html Files
-/* Internet Start html */
-#go2internet-history {
-    position: relative;
-    top: -56px;
-}
-#go2internet-networking {
-    position: relative;
-    top: -56px;
-}
-#go2internet-tech {
-    position: relative;
-    top: -56px;
-}
-
-.container-fluid {
-    .internet-history {
-        h3 {
-            font-family: $ff-h;
-            color: $clr-secondary-red;
-        }
-        ul li {
-            font-family: $ff-p;
-        }        
-    }
-    .networking {
-        h3 {
-            font-family: $ff-h;
-            color: $clr-primary;
-        }
-        p {
-            font-family: $ff-p;
-         }
-        
-    }
-    .internet-tech {
-        h3 {
-            font-family: $ff-h;
-            color: $clr-secondary-yel;
-        }
-        p {
-            font-family: $ff-p;
-        }
     }
 }
 
-/* Internet End html */
-
-/* Project App html Start */ 
-#go2project {
-    position: relative;
-    top: -56px;
-}
-/* Project App html End */ 
-
-/* Media Queries Start */
-@media (max-width: 768px) {
-    .carousel-caption {
-        top: 55%;
-    }
-    .carousel-caption h3 {
-        font-size: 300%;
-    }
+// Animates the transition of the navbar
+.nav-active {
+    transform: translateX(0%)
 }
 
-@media (max-width: 576px) {
-    .carousel-caption {
-        top: 50%;
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
     }
-    .carousel-caption h3 {
-        font-size: 200%;
-    }
-    .carousel-caption .btn {
-        font-size: 70%;
-    }
-}
-
-@media (max-width: 440px) {
-    .carousel-caption {
-        top: 50%;
-    }
-    .carousel-caption h3 {
-        font-size: 150%;
-    }
-    .carousel-caption .btn {
-        font-size: 60%;
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
-
-@media (max-width: 360px) {
-    .carousel-caption {
-        top: 25%;
+// Animates the burger menu itself
+.toggleBurger {
+    .line1 {
+        transform: rotate(-45deg) translate(-5px,6px);
     }
-    .carousel-caption h3 {
-        font-size: 100%;
+    .line2 {
+        opacity: 0;
     }
-    .carousel-caption .btn {
-        font-size: 20%;
-    }
-    .carousel-indicators {
-        display: none;
+    .line3 {
+        transform: rotate(45deg) translate(-5px,-6px);
     }
 }
-/* Media Queries End */
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
