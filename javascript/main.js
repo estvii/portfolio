@@ -10,17 +10,16 @@ const navSlide = () => {
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = ''
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s` //Adds delay for each word
             }
-            link.style.animation = `navLinkFade 0.5s ease foward ${index / 7 + 2}s` //Adds delay for each word
+
 
         });
         // Burger Animation
         burger.classList.toggle('toggleBurger');
 
     });
-
-
 }
-
 
 navSlide();
