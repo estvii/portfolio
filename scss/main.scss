@@ -10,20 +10,20 @@ body {
      overflow-x: hidden;   
 }
 
-nav {
+header {
     display: flex;
+    flex-flow: nowrap;
     justify-content: space-between;
     align-items: center;
-    // min-height: 8vh;
-    // background-color: #5D4954;
+    padding: 5px 10px;
 }
 
-.logo {
-    color: rbg(266,266,266);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 22px;
-}
+// .logo {
+//     color: rbg(266,266,266);
+//     text-transform: uppercase;
+//     letter-spacing: 5px;
+//     font-size: 22px;
+// }
 
 .nav-links {
     position: absolute;
@@ -93,5 +93,32 @@ nav {
     }
     .line3 {
         transform: rotate(45deg) translate(-5px,-6px);
+    }
+}
+
+// Logo 
+.logo {
+    background-color: white;;
+    border: 2px solid grey;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    // transition-property: border-radius;
+    // transition-duration: 3s
+    
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+    }
+
+    &:hover{
+        // background-color: white;
+        // border: 2px solid black;
+        // height: 100px;
+        // width: 100px;
+        // border-radius: 50%;
     }
 }

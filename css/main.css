@@ -8,16 +8,12 @@
 body {
   overflow-x: hidden; }
 
-nav {
+header {
   display: flex;
+  flex-flow: nowrap;
   justify-content: space-between;
-  align-items: center; }
-
-.logo {
-  color: rbg(266, 266, 266);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 22px; }
+  align-items: center;
+  padding: 5px 10px; }
 
 .nav-links {
   position: absolute;
@@ -70,5 +66,18 @@ nav {
   opacity: 0; }
 .toggleBurger .line3 {
   transform: rotate(45deg) translate(-5px, -6px); }
+
+.logo {
+  background-color: white;
+  border: 2px solid grey;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; }
+  .logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
