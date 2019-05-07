@@ -1,3 +1,4 @@
+@import 'logo';
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -55,7 +56,7 @@ header {
 .burger {
     display: block;
     cursor: pointer;
-    z-index: 1;
+    z-index: 99;
     padding: 5px;
     margin: 5px;
 
@@ -97,28 +98,28 @@ header {
 }
 
 // Logo 
-.logo {
-    background-color: white;;
-    border: 2px solid grey;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    // transition-property: border-radius;
-    // transition-duration: 3s
+// .logo {
+//     background-color: white;;
+//     border: 2px solid grey;
+//     height: 100px;
+//     width: 100px;
+//     border-radius: 50%;
+//     // transition-property: border-radius;
+//     // transition-duration: 3s
     
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        text-align: center;
-    }
+//     a {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         height: 100%;
+//         text-align: center;
+//     }
 
-    &:hover{
-        // background-color: white;
-        // border: 2px solid black;
-        // height: 100px;
-        // width: 100px;
-        // border-radius: 50%;
-    }
-}
+//     &:hover{
+//         // background-color: white;
+//         // border: 2px solid black;
+//         // height: 100px;
+//         // width: 100px;
+//         // border-radius: 50%;
+//     }
+// }
