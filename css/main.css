@@ -55,7 +55,7 @@ header {
   flex-flow: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px; }
+  padding: 55px 10px; }
 
 .nav-links {
   position: absolute;
@@ -83,8 +83,10 @@ header {
   display: block;
   cursor: pointer;
   z-index: 2;
-  padding: 5px;
-  margin: 5px; }
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  float: right; }
   .burger div {
     width: 25px;
     height: 3px;
@@ -108,5 +110,8 @@ header {
   opacity: 0; }
 .toggleBurger .line3 {
   transform: rotate(45deg) translate(-5px, -6px); }
+
+.home-page {
+  background-color: red; }
 
 /*# sourceMappingURL=main.css.map */

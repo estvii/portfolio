@@ -16,7 +16,9 @@ header {
     flex-flow: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    padding: 55px 10px;
+    // margin: 100px 0px;
+    
 }
 
 // .logo {
@@ -57,8 +59,10 @@ header {
     display: block;
     cursor: pointer;
     z-index: 2;
-    padding: 5px;
-    margin: 5px;
+    position: absolute;
+	top: 3%;
+    right: 3%;
+    float: right;
 
     div {
         width: 25px;
@@ -97,29 +101,6 @@ header {
     }
 }
 
-// Logo 
-// .logo {
-//     background-color: white;;
-//     border: 2px solid grey;
-//     height: 100px;
-//     width: 100px;
-//     border-radius: 50%;
-//     // transition-property: border-radius;
-//     // transition-duration: 3s
-    
-//     a {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         height: 100%;
-//         text-align: center;
-//     }
-
-//     &:hover{
-//         // background-color: white;
-//         // border: 2px solid black;
-//         // height: 100px;
-//         // width: 100px;
-//         // border-radius: 50%;
-//     }
-// }
+.home-page {
+    background-color: red;
+}
