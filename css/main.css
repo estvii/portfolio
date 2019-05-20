@@ -114,4 +114,18 @@ header {
 .home-page {
   background-color: red; }
 
+.landing {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: [intro] 1fr [landing_picture] 1fr; }
+
+.intro {
+  grid-column: intro;
+  display: grid;
+  grid-template-rows: 0.5fr auto 0.5fr;
+  grid-template-columns: 1fr; }
+  .intro h1 {
+    align-self: flex-end;
+    justify-self: center; }
+
 /*# sourceMappingURL=main.css.map */

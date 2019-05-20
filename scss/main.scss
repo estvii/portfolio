@@ -104,3 +104,30 @@ header {
 .home-page {
     background-color: red;
 }
+
+// Grid Layout
+// .wrapper {
+//     display: grid;
+//     grid-gap: 20px;
+// }
+
+// Landing Page
+.landing {
+    display: grid;
+    // min-height: 300px;
+    min-height: 100vh;
+    grid-template-columns: [intro] 1fr [landing_picture] 1fr
+}
+
+.intro {
+    grid-column: intro; //not sure if this is needed here
+    display: grid;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-columns: 1fr;
+
+    h1 {
+        align-self: flex-end;
+        justify-self: center;
+    }
+}
+
