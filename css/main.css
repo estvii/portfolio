@@ -115,12 +115,16 @@ header {
 .landing {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: [intro] 1fr [landing_picture] 1fr; }
+  grid-template-columns: [intro] 1fr [landing_picture] 1fr;
+  background-image: url("./../assets/landing-page.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right; }
 
 .intro {
   grid-column: intro;
   display: grid;
-  grid-template-rows: 0.5fr auto 0.5fr;
+  grid-template-rows: 1fr auto 1fr;
   grid-template-columns: [gutter] 100px auto; }
   .intro h1 {
     align-self: flex-end;
@@ -135,8 +139,5 @@ header {
   .intro p {
     grid-column: 2 / -1;
     font-family: 'Raleway', sans-serif; }
-
-.landing_picture {
-  background: url("./../assets//blob-shape.svg"); }
 
 /*# sourceMappingURL=main.css.map */
