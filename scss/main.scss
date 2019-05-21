@@ -22,6 +22,8 @@ header {
     
 }
 
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Fira Sans', sans-serif;
 // .logo {
 //     color: rbg(266,266,266);
 //     text-transform: uppercase;
@@ -128,7 +130,7 @@ header {
         font-size: 70px;
         grid-column: 2 / -1;
         color: #2b2b2b;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Fira Sans', sans-serif;
     }
 
     .svg-zig-zag {
@@ -138,8 +140,11 @@ header {
 
     p {
         grid-column: 2 / -1;
+        font-family: 'Raleway', sans-serif;
      }
 }
 
-
+.landing_picture {
+    background: url('./../assets//blob-shape.svg');
+}
 

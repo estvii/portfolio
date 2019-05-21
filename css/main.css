@@ -128,11 +128,15 @@ header {
     font-size: 70px;
     grid-column: 2 / -1;
     color: #2b2b2b;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    font-family: 'Fira Sans', sans-serif; }
   .intro .svg-zig-zag {
     grid-column: 2 / -1;
     margin: 15px 0px; }
   .intro p {
-    grid-column: 2 / -1; }
+    grid-column: 2 / -1;
+    font-family: 'Raleway', sans-serif; }
+
+.landing_picture {
+  background: url("./../assets//blob-shape.svg"); }
 
 /*# sourceMappingURL=main.css.map */
