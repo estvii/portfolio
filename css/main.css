@@ -1,4 +1,4 @@
-svg,
+.svg-circle,
 .content {
   position: absolute;
   top: 8%;
@@ -48,7 +48,8 @@ svg,
   margin: 0; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: #f7f7f7; }
 
 header {
   display: flex;
@@ -111,9 +112,6 @@ header {
 .toggleBurger .line3 {
   transform: rotate(45deg) translate(-5px, -6px); }
 
-.home-page {
-  background-color: red; }
-
 .landing {
   display: grid;
   min-height: 100vh;
@@ -123,9 +121,18 @@ header {
   grid-column: intro;
   display: grid;
   grid-template-rows: 0.5fr auto 0.5fr;
-  grid-template-columns: 1fr; }
+  grid-template-columns: [gutter] 100px auto; }
   .intro h1 {
     align-self: flex-end;
-    justify-self: center; }
+    justify-self: start;
+    font-size: 70px;
+    grid-column: 2 / -1;
+    color: #2b2b2b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .intro .svg-zig-zag {
+    grid-column: 2 / -1;
+    margin: 15px 0px; }
+  .intro p {
+    grid-column: 2 / -1; }
 
 /*# sourceMappingURL=main.css.map */
