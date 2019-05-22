@@ -1,11 +1,11 @@
 .svg-circle,
-.content {
+.logo-name {
   position: absolute;
   top: 8%;
   left: 8%;
   transform: translate(-50%, -50%); }
 
-.content {
+.logo-name {
   opacity: 0;
   display: flex;
   align-items: center;
@@ -139,5 +139,29 @@ header {
   .intro p {
     grid-column: 2 / -1;
     font-family: 'Raleway', sans-serif; }
+
+.works {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: [left-gutter] auto 1fr [right-gutter] auto; }
+  .works h1 {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center; }
+  .works .card {
+    grid-column: 2 / -2;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 70vh;
+    border-radius: 5px; }
+    .works .card .content {
+      grid-column: 1 / 2; }
+    .works .card img {
+      grid-column: 2/3;
+      padding: 20px;
+      width: 50%; }
 
 /*# sourceMappingURL=main.css.map */
