@@ -159,7 +159,7 @@ header {
     border-radius: 5px; }
     .works .card .content {
       grid-column: 1 / 2; }
-    .works .card img {
+    .works .card .image-and-links img {
       grid-column: 2/3;
       padding: 20px;
       width: 50%; }

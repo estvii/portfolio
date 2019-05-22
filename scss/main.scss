@@ -180,16 +180,18 @@ header {
         height: 70vh;
         border-radius: 5px;
 
-
         .content {
             grid-column: 1 / 2;
         }
 
-        img {
-            grid-column: 2/3;
-            padding: 20px;
-            width: 50%;
+        .image-and-links {
+            img {
+                grid-column: 2/3;
+                padding: 20px;
+                width: 50%;
+            }
         }
+        
     }
 }
 
