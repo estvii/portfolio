@@ -158,7 +158,7 @@ header {
 .works {
     display: grid;
     grid-gap: 20px; //dont think this is required
-    grid-template-columns: [left-gutter] auto 1fr [right-gutter] auto;
+    grid-template-columns: [left-gutter] auto 0.75fr [right-gutter] auto;
 
     h1 {
         grid-column: 1 / -1;
