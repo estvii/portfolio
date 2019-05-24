@@ -158,35 +158,34 @@ header {
 .works {
     display: grid;
     grid-gap: 20px; //dont think this is required
-    grid-template-columns: [left-gutter] auto 0.75fr [right-gutter] auto;
+    grid-template-columns: [left-gutter] auto [cards] 0.75fr [right-gutter] auto;
 
     h1 {
-        grid-column: 1 / -1;
-        justify-self: center;
+        grid-column: cards / right-gutter;
         align-self: center;
-
+        justify-self: center;
     }
 
     // Individual Cards
     .card {
-        // rename the 2 / -2 to variables eg left-gutter / etc
-        grid-column: 2 / -2;
+        grid-column: cards / right-gutter;
         display: grid;
-        grid-gap: 20px;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        grid-template-areas: 
+            "info image_and_link"
+            "info image_and_link";
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        // width: 40%;
-        height: 70vh;
         border-radius: 5px;
 
         .content {
-            grid-column: 1 / 2;
+            grid-area: info;
         }
 
         .image-and-links {
+            grid-area: image_and_link;
             img {
-                grid-column: 2/3;
                 padding: 20px;
                 width: 50%;
             }
@@ -194,4 +193,3 @@ header {
         
     }
 }
-
