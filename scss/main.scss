@@ -196,6 +196,11 @@ header {
 
 
 @media (max-width: 768px) {
+    .svg-circle,
+    .logo-name {
+    top: 5%;
+    left: 10%;
+    }
     .landing {
         grid-template-columns: [intro] 1fr;
         grid-template-rows: auto 0px;
@@ -203,6 +208,13 @@ header {
         .intro {
             grid-template-rows: 40vh 110px 40vh;
             grid-template-columns: [left-gutter] 50px [texts] 1fr [right-gutter] 50px;
+            h1 {
+                font-size: 60px;
+                justify-self: center;
+            }
+            svg {
+                left: 3%;
+            }
         }
         
     }
