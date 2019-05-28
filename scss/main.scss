@@ -163,6 +163,8 @@ header {
         grid-column: cards / right-gutter;
         align-self: center;
         justify-self: center;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 50px;
     }
 
     // Individual Cards
@@ -176,17 +178,67 @@ header {
             "info image_and_link";
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        border-radius: 5px;
+        border-radius: 30px;
+        padding: 20px;
 
         .content {
             grid-area: info;
+
+            h2 {
+                font-size: 35px;
+                text-align: center;
+                padding-bottom: 10px;
+                font-family: 'Fira Sans', sans-serif;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 25px;
+                font-family: 'Raleway', sans-serif;
+                padding-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 25px;
+                font-family: 'Fira Sans', sans-serif;
+            }
+            ul {
+                font-size: 20px;
+                font-family: 'Raleway', sans-serif;
+                list-style-position: inside;
+            }
         }
 
         .image-and-links {
             grid-area: image_and_link;
             img {
-                padding: 20px;
-                width: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                height: 90%;
+                object-fit: cover;
+                padding-bottom: 10px;
+            }
+
+            .links {
+                text-align: center;
+                button {
+                    background-color: #0793E3;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+                    padding: 10px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: #004777;
+                    }
+                }
             }
         }
         
@@ -212,18 +264,35 @@ header {
                 font-size: 60px;
                 justify-self: center;
             }
-            svg {
-                left: 3%;
-            }
         }
         
     }
+    // Cards
     .works {
+        h1 {
+            font-size: 30px;
+        }
         .card {
-            background: red;
             grid-template-areas: 
                 "info info"
+                "info info"
+                "image_and_link image_and_link"
                 "image_and_link image_and_link";
+
+            .content {
+                p {
+                    font-size: 13px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+                
+                ul {
+                    font-size: 13px;
+                }
+
+            }
         }
     }
 }
