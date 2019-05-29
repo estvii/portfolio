@@ -154,6 +154,7 @@ header {
 //     background-position: left;
 // }
 
+// Works Section
 .works {
     display: grid;
     grid-gap: 20px; //dont think this is required
@@ -245,6 +246,80 @@ header {
     }
 }
 
+// About Me Section
+.about {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "about-title about-title"   
+        "profile-pic profile-detail";
+
+    h1 {
+        grid-area: about-title;
+        justify-self: center;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 50px;
+    }
+        
+    .profile-pic {
+        grid-area: profile-pic;
+        justify-self: center;
+        align-self: center;
+        
+        img {
+            height: 100%;
+            width: 100%;    
+            border-radius: 50%;
+        }
+    }
+
+    .profile-detail {
+        grid-area: profile-detail;
+        p {
+            font-size: 20px;
+            line-height: 25px;
+            font-family: 'Raleway', sans-serif;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+// Skills
+
+.skills {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 200px 200px 200px;
+
+    h1 {
+        justify-self: center;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 50px;
+    }
+
+    .front-end, .back-end {
+        .icons {
+            list-style: none;
+            grid-gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            
+            li {
+                display: grid;
+                grid-template-columns: 70px auto;
+                justify-items: center;
+                align-items: center;
+
+                i {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -295,7 +370,18 @@ header {
             }
         }
     }
+
+    // About-me
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "about-title"   
+            "profile-pic"
+            "profile-detail";
+    }
 }
+
+
 
 // Reference Chart for media queries
 // Extra small (xs) devices (portrait phones, less than 576px)

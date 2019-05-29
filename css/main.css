@@ -208,6 +208,55 @@ header {
           .works .card .image-and-links .links button:hover {
             background-color: #004777; }
 
+.about {
+  padding: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "about-title about-title" "profile-pic profile-detail"; }
+  .about h1 {
+    grid-area: about-title;
+    justify-self: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 50px; }
+  .about .profile-pic {
+    grid-area: profile-pic;
+    justify-self: center;
+    align-self: center; }
+    .about .profile-pic img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%; }
+  .about .profile-detail {
+    grid-area: profile-detail; }
+    .about .profile-detail p {
+      font-size: 20px;
+      line-height: 25px;
+      font-family: 'Raleway', sans-serif;
+      padding-bottom: 10px; }
+
+.skills {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 200px 200px 200px; }
+  .skills h1 {
+    justify-self: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 50px; }
+  .skills .front-end .icons, .skills .back-end .icons {
+    list-style: none;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .skills .front-end .icons li, .skills .back-end .icons li {
+      display: grid;
+      grid-template-columns: 70px auto;
+      justify-items: center;
+      align-items: center; }
+      .skills .front-end .icons li i, .skills .back-end .icons li i {
+        font-size: 5rem; }
+
 @media (max-width: 768px) {
   .svg-circle,
   .logo-name {
@@ -234,6 +283,10 @@ header {
     .works .card .content h3 {
       font-size: 20px; }
     .works .card .content ul {
-      font-size: 13px; } }
+      font-size: 13px; }
+
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-areas: "about-title" "profile-pic" "profile-detail"; } }
 
 /*# sourceMappingURL=main.css.map */
