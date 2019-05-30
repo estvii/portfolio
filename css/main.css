@@ -1,3 +1,13 @@
+:root {
+  --header-font: 'Fira Sans', sans-serif;
+  --text-font: 'Raleway', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font); }
+
+p, li, ul, a {
+  font-family: var(--text-font); }
+
 .svg-circle,
 .logo-name {
   position: absolute;
@@ -15,7 +25,7 @@
   text-align: center;
   color: grey;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 2rem;
   font-family: 'Raleway', sans-serif;
   animation: fadeIn 0.75s linear forwards;
   animation-delay: 1s;
@@ -52,7 +62,8 @@
 
 body {
   overflow-x: hidden;
-  background: #f7f7f7; }
+  background: #f7f7f7;
+  font-size: 16px; }
 
 header {
   display: flex;
@@ -78,7 +89,7 @@ header {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 50px; }
+    font-size: 5rem; }
   .nav-links li {
     list-style: none;
     opacity: 0; }
@@ -132,16 +143,16 @@ header {
   .intro h1 {
     align-self: flex-end;
     justify-self: start;
-    font-size: 70px;
+    font-size: 5rem;
     grid-column: texts / right-gutter;
-    color: #2b2b2b;
-    font-family: 'Fira Sans', sans-serif; }
+    color: #2b2b2b; }
   .intro .svg-zig-zag {
     grid-column: texts / right-gutter;
     align-self: center; }
   .intro p {
     grid-column: texts / right-gutter;
-    font-family: 'Raleway', sans-serif; }
+    line-height: 2rem;
+    font-size: 1.2rem; }
 
 .works {
   display: grid;
@@ -151,8 +162,7 @@ header {
     grid-column: cards / right-gutter;
     align-self: center;
     justify-self: center;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 50px; }
+    font-size: 3rem; }
   .works .card {
     grid-column: cards / right-gutter;
     display: grid;
@@ -166,21 +176,15 @@ header {
     .works .card .content {
       grid-area: info; }
       .works .card .content h2 {
-        font-size: 35px;
+        font-size: 2rem;
         text-align: center;
-        padding-bottom: 10px;
-        font-family: 'Fira Sans', sans-serif; }
+        padding-bottom: 10px; }
       .works .card .content p {
-        font-size: 20px;
         line-height: 25px;
-        font-family: 'Raleway', sans-serif;
         padding-bottom: 10px; }
       .works .card .content h3 {
-        font-size: 25px;
-        font-family: 'Fira Sans', sans-serif; }
+        font-size: 1.5rem; }
       .works .card .content ul {
-        font-size: 20px;
-        font-family: 'Raleway', sans-serif;
         list-style-position: inside; }
     .works .card .image-and-links {
       grid-area: image_and_link; }
@@ -203,7 +207,7 @@ header {
           text-align: center;
           text-decoration: none;
           display: inline-block;
-          font-size: 16px;
+          font-size: 1rem;
           border-radius: 5px; }
           .works .card .image-and-links .links button:hover {
             background-color: #004777; }
@@ -217,8 +221,7 @@ header {
   .about h1 {
     grid-area: about-title;
     justify-self: center;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 50px; }
+    font-size: 3rem; }
   .about .profile-pic {
     grid-area: profile-pic;
     justify-self: center;
@@ -230,9 +233,7 @@ header {
   .about .profile-detail {
     grid-area: profile-detail; }
     .about .profile-detail p {
-      font-size: 20px;
       line-height: 25px;
-      font-family: 'Raleway', sans-serif;
       padding-bottom: 10px; }
 
 .skills {
@@ -242,8 +243,7 @@ header {
   grid-template-rows: auto 200px 200px 200px; }
   .skills h1 {
     justify-self: center;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 50px; }
+    font-size: 3rem; }
   .skills .front-end .icons, .skills .back-end .icons {
     list-style: none;
     grid-gap: 20px;
@@ -271,19 +271,10 @@ header {
       grid-template-rows: 40vh 110px 40vh;
       grid-template-columns: [left-gutter] 50px [texts] 1fr [right-gutter] 50px; }
       .landing .intro h1 {
-        font-size: 60px;
         justify-self: center; }
 
-  .works h1 {
-    font-size: 30px; }
   .works .card {
     grid-template-areas: "info info" "info info" "image_and_link image_and_link" "image_and_link image_and_link"; }
-    .works .card .content p {
-      font-size: 13px; }
-    .works .card .content h3 {
-      font-size: 20px; }
-    .works .card .content ul {
-      font-size: 13px; }
 
   .about {
     grid-template-columns: 1fr;
