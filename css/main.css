@@ -240,22 +240,24 @@ header {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 200px 200px 200px; }
+  grid-template-rows: repeat(4, auto); }
   .skills h1 {
     justify-self: center;
     font-size: 3rem; }
-  .skills .front-end .icons, .skills .back-end .icons {
+  .skills .front-end .icons, .skills .back-end .icons, .skills .others .icons {
     list-style: none;
     grid-gap: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-    .skills .front-end .icons li, .skills .back-end .icons li {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .skills .front-end .icons li, .skills .back-end .icons li, .skills .others .icons li {
       display: grid;
       grid-template-columns: 70px auto;
-      justify-items: center;
       align-items: center; }
-      .skills .front-end .icons li i, .skills .back-end .icons li i {
+      .skills .front-end .icons li i, .skills .back-end .icons li i, .skills .others .icons li i {
         font-size: 5rem; }
+      .skills .front-end .icons li p, .skills .back-end .icons li p, .skills .others .icons li p {
+        position: relative;
+        left: 35px; }
 
 @media (max-width: 768px) {
   .svg-circle,
