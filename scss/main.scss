@@ -11,7 +11,9 @@ p, li, ul, a {
     font-family: var(--text-font);
 }
 
+@import 'horizontal-line';
 @import 'logo';
+
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -159,7 +161,9 @@ header {
 // Works Section
 .works {
     display: grid;
-    grid-gap: 20px; //dont think this is required
+    grid-gap: 20px; 
+    padding-left: 20px;
+    padding-right: 20px;
     grid-template-columns: [left-gutter] auto [cards] 1fr [right-gutter] auto;
 
     h1 {
@@ -243,7 +247,7 @@ header {
 
 // About Me Section
 .about {
-    padding: 20px;
+    
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
@@ -273,15 +277,17 @@ header {
         grid-area: profile-detail;
         p {
             line-height: 25px;
-            padding-bottom: 10px;
+            padding: 10px;
         }
     }
 }
 
 // Skills
 .skills {
-    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: 1fr;
     // grid-template-rows: auto auto auto auto;
     grid-template-rows: repeat(4, auto);
@@ -315,6 +321,42 @@ header {
     }
 }
 
+// Footer
+.footer {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-template-areas: 
+        "contact social-media";
+    
+    .contact { 
+        grid-area: contact;
+        display: grid;
+        grid-template-rows: auto 200px 200px;
+
+        h1 {
+            align-self: center;
+            font-size: 3rem;
+        }
+    }
+
+    .social-media {
+        grid-area: social-media;
+        align-self: center;
+        justify-self: center;
+    }
+    
+}
+
+.copyright {
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
 // Media queries
 @media (max-width: 768px) {
     .svg-circle,
@@ -341,6 +383,8 @@ header {
         // h1 {
         //     // font-size: 30px;
         // }
+            padding-left: 0px;
+            padding-right: 0px;
         .card {
             grid-template-areas: 
                 "info info"

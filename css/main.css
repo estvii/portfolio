@@ -8,6 +8,20 @@ h1, h2, h3, h4, h5, h6 {
 p, li, ul, a {
   font-family: var(--text-font); }
 
+.horizontal-line {
+  height: 2.5px;
+  background-color: #E6E6E6;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-image: linear-gradient(left, #f7f7f7 2%, #E6E6E6 50%, #f7f7f7 98%);
+  background-image: -o-linear-gradient(left, #f7f7f7 2%, #E6E6E6 50%, #f7f7f7 98%);
+  background-image: -moz-linear-gradient(left, #f7f7f7 2%, #E6E6E6 50%, #f7f7f7 98%);
+  background-image: -webkit-linear-gradient(left, #f7f7f7 2%, #E6E6E6 50%, #f7f7f7 98%);
+  background-image: -ms-linear-gradient(left, #f7f7f7 2%, #E6E6E6 50%, #f7f7f7 98%);
+  background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.02, #f7f7f7), color-stop(0.5, gray), color-stop(0.98, #f7f7f7)); }
+
 .svg-circle,
 .logo-name {
   position: absolute;
@@ -157,6 +171,8 @@ header {
 .works {
   display: grid;
   grid-gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   grid-template-columns: [left-gutter] auto [cards] 1fr [right-gutter] auto; }
   .works h1 {
     grid-column: cards / right-gutter;
@@ -213,7 +229,6 @@ header {
             background-color: #004777; }
 
 .about {
-  padding: 20px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
@@ -234,11 +249,13 @@ header {
     grid-area: profile-detail; }
     .about .profile-detail p {
       line-height: 25px;
-      padding-bottom: 10px; }
+      padding: 10px; }
 
 .skills {
-  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto); }
   .skills h1 {
@@ -259,6 +276,29 @@ header {
         position: relative;
         left: 35px; }
 
+.footer {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contact social-media"; }
+  .footer .contact {
+    grid-area: contact;
+    display: grid;
+    grid-template-rows: auto 200px 200px; }
+    .footer .contact h1 {
+      align-self: center;
+      font-size: 3rem; }
+  .footer .social-media {
+    grid-area: social-media;
+    align-self: center;
+    justify-self: center; }
+
+.copyright {
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
 @media (max-width: 768px) {
   .svg-circle,
   .logo-name {
@@ -275,8 +315,11 @@ header {
       .landing .intro h1 {
         justify-self: center; }
 
-  .works .card {
-    grid-template-areas: "info info" "info info" "image_and_link image_and_link" "image_and_link image_and_link"; }
+  .works {
+    padding-left: 0px;
+    padding-right: 0px; }
+    .works .card {
+      grid-template-areas: "info info" "info info" "image_and_link image_and_link" "image_and_link image_and_link"; }
 
   .about {
     grid-template-columns: 1fr;
