@@ -285,19 +285,37 @@ header {
   .footer .contact {
     grid-area: contact;
     display: grid;
-    grid-template-rows: auto 200px 200px; }
+    grid-template-rows: auto 230px 100px; }
     .footer .contact h1 {
       align-self: center;
       font-size: 3rem; }
+    .footer .contact .email {
+      background-color: #fbc93d;
+      border: none;
+      cursor: pointer;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+      border-radius: 5px; }
+      .footer .contact .email:hover {
+        background-color: #fabb0b; }
   .footer .social-media {
     grid-area: social-media;
-    align-self: center;
-    justify-self: center; }
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center; }
+    .footer .social-media a {
+      text-decoration: none; }
+      .footer .social-media a i {
+        font-size: 5rem; }
 
 .copyright {
   padding-left: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  text-align: center; }
 
 @media (max-width: 768px) {
   .svg-circle,
@@ -323,6 +341,10 @@ header {
 
   .about {
     grid-template-columns: 1fr;
-    grid-template-areas: "about-title" "profile-pic" "profile-detail"; } }
+    grid-template-areas: "about-title" "profile-pic" "profile-detail"; }
+
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-areas: "contact" "social-media"; } }
 
 /*# sourceMappingURL=main.css.map */
