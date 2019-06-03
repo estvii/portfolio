@@ -232,8 +232,12 @@
                 </svg>
                 <h1>Have an idea?<br>Let's work together</h1>
                 <a>
-                    <button class="email">Get in touch</button>
-
+                    <div class="tooltip">
+                        <button onmouseout="outFunc()" class="email" id=copy-email>
+                            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                            Get in Touch
+                        </button>
+                    </div>
                 </a>
             </div>
             <div class="social-media">

@@ -22,4 +22,31 @@ const navSlide = () => {
     });
 }
 
+const copyEmail = () => {
+    let button = document.getElementById('copy-email');
+    const email = "visteven76@gmail.com"
+
+    // Creates a dummy input and assigns a value of email to it.
+    // Which is then appended to the body for copy and removed afterward
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dummy_el = document.createElement('input');
+        dummy_el.value = email;
+        document.body.appendChild(dummy_el);
+        dummy_el.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy_el);
+        // Tool tip
+        const tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "Email Copied";
+
+    })
+}
+
+function outFunc() {
+    const tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
 navSlide();
+copyEmail();
