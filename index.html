@@ -71,13 +71,90 @@
         <!-- Works Section -->
         <section class="works">
             <h1>Works</h1>
+            <!-- Insert card Below -->
             <div class="card">
+                <div class="content">
+                    <h2>React Image Search</h2>
+                    <p> An image searching site that is built on React and styled with semantic UI. This site pulls data
+                        from the Unsplash API using axios and re-renders the page without refreshing for a better user
+                        experience.
+                        The application is configured to use Docker/Docker-Compose along with TravisCI for
+                        continuous integration and deployment to AWS S3 Bucket
+                    </p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>CI/CD</li>
+                        <li>Docker</li>
+                        <li>Deployed on AWS S3 upon passing test</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="image-and-links">
+                    <img src="./images/react-pics.gif" />
+                    <div class="links">
+                        <a href="http://react-pics.s3-website-us-east-1.amazonaws.com/" target="_blank">
+                            <button>Visit Site</button>
+                        </a>
+                        <a href="https://github.com/estvii/react-pics" target="_blank">
+                            <button>View Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>This website (My Portfolio)</h2>
+                    <p>
+                        A portfolio page I created HTML5, CSS3 and Javascript. The idea behind the website was to keep
+                        things at a foundation level, i.e no front-end frameworks or css frameworks such as React or
+                        Bootstrap would be used.
+                        Website is currently deployed on Github.
+                    </p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>CSS Grids</li>
+                        <li>Responsive</li>
+                        <li>SVG animation</li>
+                    </ul>
+                </div>
+                <div class="image-and-links">
+                    <img src="https://placedog.net/150" />
+                    <div class="links">
+                        <a href="https://estvii.github.io/portfolio/" target="_blank"><button>Visit Site</button></a>
+                        <a href="https://github.com/estvii/portfolio" target="_blank"><button>View Code</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>Weather Application</h2>
+                    <p> A ruby terminal application designed to fetch live data from a weather api based on users
+                        selected location.
+                        Based on the weather data returned, the application will suggest clothing pieces to wear for the
+                        day and can track a users mood by read/write data to an external text file.
+                    </p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Live API fetching</li>
+                        <li>Read / Writing external text files</li>
+                    </ul>
+                </div>
+                <div class="image-and-links">
+                    <img src="./images//terminalWeatherApp02.png" />
+                    <div class="links">
+                        <a href="https://github.com/estvii/Weather-Terminal-App" target="_blank">
+                            <button>View Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Template for works card -->
+            <!-- <div class="card">
                 <div class="content">
                     <h2>Some App</h2>
                     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Quia fugiat facilis, at molestiae natus rem aut aperiam atque nisi voluptates placeat,
                         molestias aspernatur reiciendis nostrum corporis soluta, provident quisquam porro.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     </p>
                     <h3>Features</h3>
                     <ul>
@@ -91,35 +168,11 @@
                 <div class="image-and-links">
                     <img src="https://placedog.net/150" />
                     <div class="links">
-                        <a href="#"><button>Visit Site</button></a>
-                        <a href="#"><button>View Code</button></a>
+                        <a href="#" target="_blank"><button>Visit Site</button></a>
+                        <a href="#" target="_blank"><button>View Code</button></a>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h2>Some App</h2>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Quia fugiat facilis, at molestiae natus rem aut aperiam atque nisi voluptates placeat,
-                        molestias aspernatur reiciendis nostrum corporis soluta, provident quisquam porro.
-                    </p>
-                    <h3>Features</h3>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
-                </div>
-                <div class="image-and-links">
-                    <img src="https://placedog.net/150" />
-                    <div class="links">
-                        <a href="#"><button>Visit Site</button></a>
-                        <a href="#"><button>View Code</button></a>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </section>
         <div class="horizontal-line"></div>
         <section class="about">
@@ -207,15 +260,27 @@
                 <ul class="icons">
                     <li>
                         <i class="devicon-git-plain colored"></i>
-                        <p>Git</p>
+                        <p>Git / Github</p>
+                    </li>
+                    <li>
+                        <i class="devicon-bitbucket-plain-wordmark colored"></i>
+                        <p>BitBucket</p>
                     </li>
                     <li>
                         <i class="devicon-docker-plain colored"></i>
                         <p>Docker</p>
                     </li>
                     <li>
+                        <i class="devicon-travis-plain colored"></i>
+                        <p>TravisCI</p>
+                    </li>
+                    <li>
                         <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
                         <p>Amazon Web Services</p>
+                    </li>
+                    <li>
+                        <i class="devicon-trello-plain colored"></i>
+                        <p>Trello</p>
                     </li>
                 </ul>
             </div>

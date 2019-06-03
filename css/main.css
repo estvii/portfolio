@@ -210,23 +210,25 @@ header {
         margin-right: auto;
         width: 90%;
         height: 90%;
-        object-fit: cover;
+        object-fit: contain;
         padding-bottom: 10px; }
       .works .card .image-and-links .links {
         text-align: center; }
-        .works .card .image-and-links .links button {
-          background-color: #0793E3;
-          border: none;
-          cursor: pointer;
-          color: white;
-          padding: 10px 20px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 1rem;
-          border-radius: 5px; }
-          .works .card .image-and-links .links button:hover {
-            background-color: #004777; }
+        .works .card .image-and-links .links a {
+          text-decoration: none; }
+          .works .card .image-and-links .links a button {
+            background-color: #0793E3;
+            border: none;
+            cursor: pointer;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px; }
+            .works .card .image-and-links .links a button:hover {
+              background-color: #004777; }
 
 .about {
   display: grid;
@@ -271,10 +273,10 @@ header {
       grid-template-columns: 70px auto;
       align-items: center; }
       .skills .front-end .icons li i, .skills .back-end .icons li i, .skills .others .icons li i {
-        font-size: 5rem; }
+        font-size: 4rem; }
       .skills .front-end .icons li p, .skills .back-end .icons li p, .skills .others .icons li p {
         position: relative;
-        left: 35px; }
+        left: 25px; }
 
 .footer {
   padding-left: 40px;
@@ -285,23 +287,26 @@ header {
   .footer .contact {
     grid-area: contact;
     display: grid;
-    grid-template-rows: auto 230px 100px; }
+    grid-template-rows: auto 230px 90px; }
     .footer .contact h1 {
       align-self: center;
       font-size: 3rem; }
-    .footer .contact .email {
-      background-color: #fbc93d;
-      border: none;
-      cursor: pointer;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 1rem;
-      border-radius: 5px; }
-      .footer .contact .email:hover {
-        background-color: #fabb0b; }
+    .footer .contact a {
+      align-self: center; }
+      .footer .contact a .email {
+        background-color: #fbc93d;
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        border-radius: 5px;
+        align-self: center; }
+        .footer .contact a .email:hover {
+          background-color: #fabb0b; }
   .footer .social-media {
     grid-area: social-media;
     display: flex;
@@ -348,8 +353,7 @@ header {
 
 .copyright {
   padding-left: 40px;
-  padding-bottom: 10px;
-  text-align: center; }
+  padding-bottom: 10px; }
 
 @media (max-width: 768px) {
   .svg-circle,
