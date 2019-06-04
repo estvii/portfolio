@@ -23,12 +23,14 @@ p, li, ul, a {
     margin: 0;
   }
 
+html {
+    font-size: 16px;
+}
 
 
 body {
      overflow-x: hidden;
      background: #f7f7f7;
-     font-size: 16px;
 }
 
 header {
@@ -178,8 +180,9 @@ header {
     .card {
         grid-column: cards / right-gutter;
         display: grid;
+        grid-gap: 20px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 200px;
+        grid-template-rows: 250px 250px;
         grid-template-areas: 
             "info image_and_link"
             "info image_and_link";
@@ -212,6 +215,8 @@ header {
 
         .image-and-links {
             grid-area: image_and_link;
+            display: grid;
+            grid-template-rows: auto auto;
             img {
                 display: block;
                 margin-left: auto;
@@ -434,6 +439,10 @@ header {
 
 // Media queries
 @media (max-width: 768px) {
+    html {
+        font-size: 11px;
+    }
+
     .svg-circle,
     .logo-name {
     top: 5%;
@@ -455,32 +464,19 @@ header {
     }
     // Cards
     .works {
-        // h1 {
-        //     // font-size: 30px;
-        // }
             padding-left: 0px;
             padding-right: 0px;
         .card {
+            grid-template-rows: auto auto;
             grid-template-areas: 
                 "info info"
-                "info info"
-                "image_and_link image_and_link"
                 "image_and_link image_and_link";
 
-            // .content {
-            //     p {
-            //         // font-size: 13px;
-            //     }
-
-            //     h3 {
-            //         // font-size: 20px;
-            //     }
-                
-            //     ul {
-            //         // font-size: 13px;
-            //     }
-
-            // }
+            .content {
+                p {
+                    line-height: 15px;
+                }
+            }
         }
     }
 
