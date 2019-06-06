@@ -1,0 +1,60 @@
+.svg-circle,
+.logo-name {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    float: left;
+    display: block;
+}
+
+.logo-name {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 2rem; //originally 25px
+    font-family: 'Raleway', sans-serif;
+	animation: fadeIn 0.75s linear forwards;
+    animation-delay: 1s;
+    z-index: -1;
+}
+
+.circle {
+    // stroke-dasharray: 1000;
+    // stroke-dashoffset: 1000;
+    stroke: grey;
+    stroke-width: 5 ;
+    fill-opacity: 0;
+    // animation: greyBorder 4s linear forwards;
+}
+
+.circle-border {
+    fill-opacity: 0;
+    
+    &:hover {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        stroke: black;
+        stroke-width: 5 ;    
+        animation: blackBorder 4s linear forwards
+    }
+}
+
+@keyframes blackBorder {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}

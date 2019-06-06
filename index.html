@@ -1,218 +1,373 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-        integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
-        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVi</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="css/main.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+        integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous">
+        </script>
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link href="css/main.css" rel="stylesheet" />
-
-    <title>SVi</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- NAVBAR START -->
-    <div id="go2home"></div>
-    <nav class="navbar navbar-expand-md navbar-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="https://estvii.github.io/portfolio/">Steven</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link Active" href="#go2home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#go2about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#go2educareer">Education & Career</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#go2projects">Projects</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#go2carousel">Internet</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#go2skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#go2contacts">Contact</a></li>
+    <div class="wrapper">
+        <!-- Logo and Navbar -->
+        <div class="logo">
+            <a href="#">
+                <svg class="svg-circle" height="100" width="100">
+                    <circle class="circle" cx="50" cy="50" r="30" />
+                </svg>
+                <svg class="svg-circle" height="100" width="100">
+                    <circle class="circle-border" cx="50" cy="50" r="30" />
+                </svg>
+                <div class="logo-name">SV</div>
+            </a>
+        </div>
+        <!-- Possible Future Feature  -->
+        <!-- <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Work</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav> -->
+        <!-- Landing Page intro + Landing Picture-->
+        <section class="landing">
+            <div class="intro">
+                <h1>Steven Vi</h1>
+                <svg class="svg-zig-zag" viewbox="0 0 330 15">
+                    <polyline points="0.7,13.7 13.4,0.8 25.3,12.8 37.2,0.8 49,12.8 60.9,0.8 72.8,12.8 84.7,0.8 96.6"
+                        style="fill: none;
+                        stroke: #fb4f4f;
+                        stroke-linecap: round;
+                        stroke-width: 2;" />
+                </svg>
+                <p> I'm a Junior Full Stack Developer based in Sydney, Australia.
+                    <br>
+                    I strive to build exceptional online experiences.
+                </p>
+            </div>
+            <div class="landing_picture"></div>
+        </section>
+        <!-- Works Section -->
+        <section class="works">
+            <h1>Works</h1>
+            <!-- Insert card Below -->
+            <div class="card">
+                <div class="content">
+                    <h2>Client Management System</h2>
+                    <p>
+                        A client management system with an in-built dashboard to monitor clients statistics, built for a
+                        private client.
+                        This application was built with a group of 3 from the ground up using the MERN Stack (MongoDB,
+                        ExpressJs, ReactJs, NodeJs).
+                        A seperate back-end for our API end points, and made requests using axios on our React frontend.
+                        It's essence is a full CRUD
+                        resource for clients to be created and for the admin to leave clients notes.
+                        The front-end has been styled using React UI framework called material UI and with some CSS
+                        <br>
+                        <span style="font-style:italic; font-weight:bold;">
+                            *If interested, please contact me for login details
+                        </span>
+                    </p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Authentication with JWT Tokens</li>
+                        <li>Material UI </li>
+                        <li>Testing using Jest</li>
+                        <li>Search Filter</li>
+                        <li>Redux State Management System</li>
+                    </ul>
+                </div>
+                <div class="image-and-links">
+                    <img src="./images/react-cms.gif" />
+                    <div class="links">
+                        <a href="http://myspamtool.com.s3-website-ap-southeast-2.amazonaws.com" target="_blank">
+                            <button>Visit Site*</button>
+                        </a>
+                        <a href="https://github.com/oephi/socialmindrCMS-backend" target="_blank">
+                            <button>View Backend Code</button>
+                        </a>
+                        <a href="https://github.com/estvii/cms-front-end" target="_blank">
+                            <button>View Frontend Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>React Image Search</h2>
+                    <p> An image searching site that is built on React and styled with semantic UI. This site pulls data
+                        from the Unsplash API using axios and re-renders the page without refreshing for a better user
+                        experience.
+                        The application is configured to use Docker/Docker-Compose along with TravisCI for
+                        continuous integration and deployment to AWS S3 Bucket
+                    </p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>CI/CD</li>
+                        <li>Docker</li>
+                        <li>Deployed on AWS S3 upon passing test</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="image-and-links">
+                    <img src="./images/react-pics.gif" />
+                    <div class="links">
+                        <a href="http://react-pics.s3-website-us-east-1.amazonaws.com/" target="_blank">
+                            <button>Visit Site</button>
+                        </a>
+                        <a href="https://github.com/estvii/react-pics" target="_blank">
+                            <button>View Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>This website (My Portfolio)</h2>
+                    <p>
+                        A portfolio page I created HTML5, CSS3 and Javascript. The idea behind the website was to keep
+                        things at a foundation level, i.e no front-end frameworks or css frameworks such as React or
+                        Bootstrap would be used.
+                        Website is currently deployed on Github.
+                    </p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>CSS Grids</li>
+                        <li>Responsive</li>
+                        <li>SVG animation</li>
+                    </ul>
+                </div>
+                <div class="image-and-links">
+                    <img src="./images/portfolio.gif" />
+                    <div class="links">
+                        <a href="https://estvii.github.io/portfolio/" target="_blank"><button>Visit Site</button></a>
+                        <a href="https://github.com/estvii/portfolio" target="_blank"><button>View Code</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>Weather Application</h2>
+                    <p> A ruby terminal application designed to fetch live data from a weather api based on users
+                        selected location.
+                        Based on the weather data returned, the application will suggest clothing pieces to wear for the
+                        day and can track a users mood by read/write data to an external text file.
+                    </p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Live API fetching</li>
+                        <li>Read / Writing external text files</li>
+                    </ul>
+                </div>
+                <div class="image-and-links">
+                    <img src="./images//terminalWeatherApp02.png" />
+                    <div class="links">
+                        <a href="https://github.com/estvii/Weather-Terminal-App" target="_blank">
+                            <button>View Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Template for works card -->
+            <!-- <div class="card">
+                <div class="content">
+                    <h2>Some App</h2>
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Quia fugiat facilis, at molestiae natus rem aut aperiam atque nisi voluptates placeat,
+                        molestias aspernatur reiciendis nostrum corporis soluta, provident quisquam porro.
+                    </p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+                <div class="image-and-links">
+                    <img src="https://placedog.net/150" />
+                    <div class="links">
+                        <a href="#" target="_blank"><button>Visit Site</button></a>
+                        <a href="#" target="_blank"><button>View Code</button></a>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <div class="horizontal-line"></div>
+        <section class="about">
+            <h1>About Me</h1>
+            <div class="profile-pic">
+                <img src="./images/profilePicture.png" />
+            </div>
+            <div class="profile-detail">
+                <p>
+                    Hi, I'm Steven. Nice to meet you.
+                    <br><br>
+                    I have a fascination in exploring and learning new stacks that can be implemented into a project.
+                    <br><br>
+                    I strive to implement scalable and reusable code and ensuring that a project is optimal, with this
+                    mentality I aim to future proof any projects I do for my clients.
+                    <br><br>
+                    Working closely with other developers, UI/UX designers, product managers I've had the pleasure of
+                    delivering products for various organisation and I'm eager to continue delivering fantastic products
+                    across a variety of industries.
+                </p>
+            </div>
+        </section>
+        <section class="skills">
+            <h1>Languages I speak</h1>
+            <div class="front-end">
+                <h2>
+                    Front-end Development
+                </h2>
+                <ul class="icons">
+                    <li>
+                        <i class="devicon-react-original colored"></i>
+                        <p>
+                            ReactJs
+                        </p>
+                    </li>
+                    <li>
+                        <i class="devicon-html5-plain colored"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="devicon-css3-plain colored"></i>
+                        <p>CSS3</p>
+                    </li>
+                    <li>
+                        <i class="devicon-sass-original colored"></i>
+                        <p>Sass</p>
+                    </li>
+                    <li>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <p>Javascript</p>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <!-- NAVBAR END -->
-    <!-- ABOUT-ME START TWO-COLUMNS -->
-    <div id="go2about"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="images/profilePicture.png" class="profilePicture">
+            <div class="back-end">
+                <h2>
+                    Back-end Development
+                </h2>
+                <ul class="icons">
+                    <li>
+                        <i class="devicon-ruby-plain colored"></i>
+                        <p>Ruby / Ruby on Rails</p>
+                    </li>
+                    <li>
+                        <i class="devicon-nodejs-plain-wordmark colored"></i>
+                        <p>nodeJs</p>
+                    </li>
+                    <li>
+                        <i class="devicon-express-original colored"></i>
+                        <p>ExpressJs</p>
+                    </li>
+                    <li>
+                        <i class="devicon-postgresql-plain-wordmark colored"></i>
+                        <p>PostgreSQL</p>
+                    </li>
+                    <li>
+                        <i class="devicon-mongodb-plain-wordmark colored"></i>
+                        <p>MongoDB</p>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-6 about-me">
-                <h2>About me</h2>
-                <p>Hi I'm Steven, an aspiring <span class="web-dev">full stack developer</span> currently living in
-                    Sydney, Australia and undertaking a fast-tracked course in web development at coderAcademy.</p>
-                <p>I have a fascination in learning how things work and operate, and hope to use this to further my
-                    knowledge as I come across different technology stacks on my journey towards a <span
-                        class="full-stack">full stack developer</span>.</p>
-                <p></p>
-
+            <div class="others">
+                <h2>
+                    Others
+                </h2>
+                <ul class="icons">
+                    <li>
+                        <i class="devicon-git-plain colored"></i>
+                        <p>Git / Github</p>
+                    </li>
+                    <li>
+                        <i class="devicon-bitbucket-plain-wordmark colored"></i>
+                        <p>BitBucket</p>
+                    </li>
+                    <li>
+                        <i class="devicon-docker-plain colored"></i>
+                        <p>Docker</p>
+                    </li>
+                    <li>
+                        <i class="devicon-travis-plain colored"></i>
+                        <p>TravisCI</p>
+                    </li>
+                    <li>
+                        <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                        <p>Amazon Web Services</p>
+                    </li>
+                    <li>
+                        <i class="devicon-trello-plain colored"></i>
+                        <p>Trello</p>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
-    <!-- ABOUT-ME END TWO-COLUMNS-->
-    <hr />
-    <!-- EDUCATION and CAREER START -->
-    <div id="go2educareer"></div>
-    <div class="container-fluid">
-        <div class="row educareer-icons">
-            <div class="col-md-6 text-center">
-                <h2>Work History</h2>
-                <i class="fas fa-briefcase"></i>
-                <p>Westpac - Full Stack Developer Intern <br> Feb 2019 - March 2019</p>
-                <p>SocialMindr - Full Stack Developer <br> Jan 2019 - Feb 2019</p>
-                <p>UNIQLO - Advanced Partner <br> Oct 2014 - Present</p>
-                <p>East View Commercial - Project Coordinator <br> Oct 2016 - Sep 2017 </p>
-                <p>Fairfield City Council - Student Engineer <br> Oct 2013 - Dec 2013</p>
-                <p>SMASH Inc. - Guest Coordinator <br> Jan 2011 - Jan 2013</p>
-            </div>
-            <div class="col-md-6 text-center">
-                <h2>Education</h2>
-                <i class="fas fa-graduation-cap"></i>
-                <p>CoderAcademy - Diploma of IT (Web Development)<br>August 2018 - Present</p>
-                <p>University of New South Wales - Bachelors in Engineering (Civil) <br> March 2010 - Dec 2014</p>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- EDUCATION AND CAREER END -->
-    <hr />
-    <!-- PROJECTS TWO COLUMNS USING CARDS START-->
-    <div id="go2projects"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2 class="projects">Projects</h2>
-                <i class="fas fa-project-diagram"></i>
-            </div>
-            <div class="col-md-6 card-padding">
-                <div class="card">
-                    <img class="card-img-top" src="images/terminalWeatherApp02.png" alt="Weather Terminal App Project">
-                    <div class="card-body">
-                        <h5 class="card-title">Weather Terminal Application</h5>
-                        <p class="card-text">App for when you wake up in the morning, to track your mood, track the
-                            weather and to suggest what clothes to wear for the day based off the days weather.</p>
-                        <a href="terminalapp.html" class="btn btn-primary">See More</a>
+        </section>
+        <div class="horizontal-line"></div>
+        <section class="footer">
+            <div class="contact">
+                <svg class="svg-zig-zag" viewbox="0 0 330 15">
+                    <polyline points="0.7,13.7 13.4,0.8 25.3,12.8 37.2,0.8 49,12.8 60.9,0.8 72.8,12.8 84.7,0.8 96.6"
+                        style="fill: none;
+                                stroke: #fb4f4f;
+                                stroke-linecap: round;
+                                stroke-width: 2;" />
+                </svg>
+                <h1>Have an idea?<br>Let's work together</h1>
+                <div class="email-and-resume">
+                    <div class="tooltip">
+                        <button onmouseout="outFunc()" class="email" id=copy-email>
+                            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                            Get in Touch
+                        </button>
                     </div>
+                    <a href="./assets/StevenVi___Resume.pdf" download="StevenVi___Resume.pdf" class="resume-parent">
+                        <button class="resume-btn">
+                            Resume
+                        </button>
+                    </a>
                 </div>
+
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/estvii">
+                    <i class="devicon-github-plain-wordmark colored"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/steven-vi-a5b64969/">
+                    <i style="color: #0077B5" class="fab fa-linkedin fa-5x"></i>
+                </a>
             </div>
 
-            <div class="col-md-6 card-padding">
-                <div class="card">
-                    <img class="card-img-top" src="images/terminalBankApp01.png" alt="Banking Terminal App">
-                    <div class="card-body">
-                        <h5 class="card-title">Banking Terminal Application</h5>
-                        <p class="card-text">Excecise project using ruby to develop a mock up banking application using
-                            the terminal to deposit and withdraw money.</p>
-                        <a href="bankingapp.html" class="btn btn-primary">See More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
+        <div class="horizontal-line"></div>
+        <div class="copyright">© Copyright 2019 | Steven Vi</div>
     </div>
-    <!-- PROJECTS TWO COLUMNS USING CARDS END -->
-    <!-- <hr /> -->
-    <!-- INTERNET HISTORY CAROUSEL  -->
-    <!-- <div id="go2carousel"></div>
-    <div id="slide" class="carousel slide" data-ride="carousel" data-internval="10">
-        <ol class="carousel-indicators">
-            <li data-target="#slide" data-slide-to="0" class="active"></li>
-            <li data-target="#slide" data-slide-to="1"></li>
-            <li data-target="#slide" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/internetHistory.jpg" alt="Internet History">
-                <div class="carousel-caption">
-                    <h3 class="display-4">Internet History</h3>
-                    <a href="internet.html#go2internet-history"><button type="button" class="btn btn-primary">View More</button></a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/internetNetworking.jpg" alt="Networking">
-                <div class="carousel-caption">
-                    <h3 class="display-4">Networking</h3>
-                    <a href="internet.html#go2internet-networking"><button type="button" class="btn btn-primary">View More</button></a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/internetTechnology.jpg" alt="Internet Technology">
-                <div class="carousel-caption">
-                    <h3 class="display-4">Internet Tech</h3>
-                    <a href="internet.html#go2internet-tech"><button type="button" class="btn btn-primary">View More</button></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- INTERNET HISTORY CAROUSEL-->
-    <hr />
-    <!-- SKILLS START  -->
-    <div id="go2skills"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="skills">Skills</h2>
-            </div>
-            <div class="col-md-12 skills-icons">
-                <i class="devicon-html5-plain-wordmark colored "></i>
-                <i class="devicon-css3-plain-wordmark colored"></i>
-                <i class="devicon-ruby-plain-wordmark colored"></i>
-                <i class="devicon-bootstrap-plain-wordmark colored"></i>
-            </div>
-            <div class="col-md-12 skills-icons">
-                <i class="devicon-mongodb-plain-wordmark colored"></i>
-                <i class="devicon-express-original-wordmark colored"></i>
-                <i class="devicon-react-original-wordmark colored"></i>
-                <i class="devicon-nodejs-plain-wordmark colored"></i>
-            </div>
-        </div>
-    </div>
-    <!-- SKILLS END -->
-    <hr />
-    <!-- CONTACT ME START -->
-    <div id="go2contacts"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="contact-me">Contact Me</h2>
-            </div>
-            <div class="col-md-12 contact-icons">
-                <a href="mailto:visteven00@gmail.com"><i class="far fa-envelope"></i></a>
-                <a href="https://github.com/estvii"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/steven-vi-a5b64969/"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- CONTACT ME END-->
-    <!-- Footer START -->
-    <footer class="footer">All rights reserved © Steven Vi 2018</footer>
-    <!-- Footer End -->
-
+    <script src="javascript/main.js"></script>
 </body>
 
 </html>
