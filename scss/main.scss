@@ -1,14 +1,18 @@
 :root{
     --header-font: 'Fira Sans', sans-serif;
     --text-font: 'Raleway', sans-serif;
+    --header-color: #2b2b2b;
+    --text-color: #7D7C7A;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-font);
+    color: var(--header-font);
 }
 
 p, li, ul, a {
     font-family: var(--text-font);
+    color: var(--text-color);
 }
 
 @import 'horizontal-line';
@@ -30,7 +34,8 @@ html {
 
 body {
      overflow-x: hidden;
-     background: #f7f7f7;
+    //  background: #f7f7f7;
+     background: linear-gradient(120deg, #f7f7f7, #F5EDF0);
 }
 
 header {
@@ -167,7 +172,7 @@ header {
     grid-gap: 20px; 
     padding-left: 20px;
     padding-right: 20px;
-    grid-template-columns: [left-gutter] auto [cards] 1fr [right-gutter] auto;
+    grid-template-columns: [left-gutter] auto [cards] auto [right-gutter] auto;
 
     h1 {
         grid-column: cards / right-gutter;
