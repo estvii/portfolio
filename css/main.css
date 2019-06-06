@@ -188,10 +188,14 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 250px 250px;
     grid-template-areas: "info image_and_link" "info image_and_link";
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+    box-shadow: 0px 0px 0px grey;
+    -webkit-transition: box-shadow .6s ease-out;
+    box-shadow: .8px .9px 3px grey;
     border-radius: 30px;
     padding: 20px; }
+    .works .card:hover {
+      box-shadow: 1px 8px 20px grey;
+      -webkit-transition: box-shadow .6s ease-in; }
     .works .card .content {
       grid-area: info; }
       .works .card .content h2 {
@@ -202,9 +206,11 @@ header {
         line-height: 25px;
         padding-bottom: 10px; }
       .works .card .content h3 {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        padding-bottom: 10px; }
       .works .card .content ul {
-        list-style-position: inside; }
+        list-style-position: inside;
+        line-height: 30px; }
     .works .card .image-and-links {
       grid-area: image_and_link;
       display: grid;
@@ -221,7 +227,8 @@ header {
         display: flex;
         justify-content: space-evenly; }
         .works .card .image-and-links .links a {
-          text-decoration: none; }
+          text-decoration: none;
+          padding: 10px; }
           .works .card .image-and-links .links a button {
             background-color: #0793E3;
             border: none;
