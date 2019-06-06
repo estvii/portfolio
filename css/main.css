@@ -218,7 +218,8 @@ header {
         object-fit: contain;
         padding-bottom: 10px; }
       .works .card .image-and-links .links {
-        text-align: center; }
+        display: flex;
+        justify-content: space-evenly; }
         .works .card .image-and-links .links a {
           text-decoration: none; }
           .works .card .image-and-links .links a button {
