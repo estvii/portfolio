@@ -25,7 +25,7 @@ p, li, ul, a {
 .svg-circle,
 .logo-name {
   position: absolute;
-  top: 5%;
+  top: 6%;
   left: 5%;
   transform: translate(-50%, -50%);
   float: left;
@@ -236,6 +236,8 @@ header {
               background-color: #004777; }
 
 .about {
+  padding-left: 40px;
+  padding-right: 40px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
@@ -267,8 +269,11 @@ header {
   grid-template-rows: repeat(4, auto); }
   .skills h1 {
     justify-self: center;
-    font-size: 3rem; }
+    font-size: 3rem;
+    padding-top: 50px; }
   .skills .front-end .icons, .skills .back-end .icons, .skills .others .icons {
+    padding-top: 30px;
+    padding-bottom: 30px;
     list-style: none;
     grid-gap: 20px;
     display: grid;
