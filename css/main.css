@@ -269,7 +269,6 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto); }
   .skills h1 {
-    justify-self: center;
     font-size: 3rem;
     padding-top: 50px; }
   .skills .front-end .icons, .skills .back-end .icons, .skills .others .icons {
@@ -302,9 +301,11 @@ header {
     .footer .contact h1 {
       align-self: center;
       font-size: 3rem; }
-    .footer .contact a {
+    .footer .contact .email-and-resume {
+      display: flex;
+      justify-content: start;
       align-self: center; }
-      .footer .contact a .email {
+      .footer .contact .email-and-resume .email {
         background-color: #fbc93d;
         border: none;
         cursor: pointer;
@@ -316,8 +317,24 @@ header {
         font-size: 1rem;
         border-radius: 5px;
         align-self: center; }
-        .footer .contact a .email:hover {
-          background-color: #fabb0b; }
+        .footer .contact .email-and-resume .email:hover {
+          background-color: #ce9904; }
+      .footer .contact .email-and-resume .resume-parent {
+        padding-left: 20px; }
+        .footer .contact .email-and-resume .resume-parent .resume-btn {
+          background-color: #3BB273;
+          border: none;
+          cursor: pointer;
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1rem;
+          border-radius: 5px;
+          align-self: center; }
+          .footer .contact .email-and-resume .resume-parent .resume-btn:hover {
+            background-color: #226542; }
   .footer .social-media {
     grid-area: social-media;
     display: flex;
