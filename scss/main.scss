@@ -399,7 +399,7 @@ header {
             .resume-parent {
                 padding-left: 20px;
                 .resume-btn {
-                    background-color: #3BB273;
+                    background-color: #fbc93d;
                     border: none;
                     cursor: pointer;
                     color: white;
@@ -411,7 +411,7 @@ header {
                     border-radius: 5px;
                     align-self: center;
                     &:hover {
-                        background-color: darken(#3BB273, 20);
+                        background-color: darken(#fbc93d, 20);
                     }
                 }    
             }

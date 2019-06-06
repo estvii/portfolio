@@ -333,7 +333,7 @@ header {
       .footer .contact .email-and-resume .resume-parent {
         padding-left: 20px; }
         .footer .contact .email-and-resume .resume-parent .resume-btn {
-          background-color: #3BB273;
+          background-color: #fbc93d;
           border: none;
           cursor: pointer;
           color: white;
@@ -345,7 +345,7 @@ header {
           border-radius: 5px;
           align-self: center; }
           .footer .contact .email-and-resume .resume-parent .resume-btn:hover {
-            background-color: #226542; }
+            background-color: #ce9904; }
   .footer .social-media {
     grid-area: social-media;
     display: flex;
